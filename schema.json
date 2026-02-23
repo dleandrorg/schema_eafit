@@ -1,17 +1,14 @@
 {
-  "name": "estado_respuesta",
-  "schema": {
-    "type": "object",
-    "properties": {
-      "Estado": {
-        "type": "string",
-        "enum": ["Abierto", "Cerrado"]
-      },
-      "Respuesta": {
-        "type": "string"
-      }
+  "type": "object",
+  "properties": {
+    "Estado": {
+      "type": "string",
+      "enum": ["Abierto", "Cerrado"]
     },
-    "required": ["Estado", "Respuesta"],
-    "additionalProperties": false
-  }
+    "Respuesta": {
+      "type": "string"
+    }
+  },
+  "required": ["Estado", "Respuesta"],
+  "additionalProperties": false
 }
